@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-8p%gft@3=i$x(7w9y8cd2=frenb%9%%8+zjix(vq3dpfe*nc(v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://my-portfolio-4nre.onrender.com']
 
 
 # Application definition
@@ -131,5 +131,12 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')    
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")  
 
