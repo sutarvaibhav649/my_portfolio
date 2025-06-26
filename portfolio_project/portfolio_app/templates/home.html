@@ -1,0 +1,247 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="left">
+        <div class="name">
+            <h4>Hi, I am <span>Vaibhav</span></h4>
+        </div>
+        <div class="tagline">
+            <p>I am a <span id="typing-text" class="typed-text"></span></p>
+        </div>
+       <div class="desc">
+    <p class="hero-description">
+        Passionate Computer Science student skilled in Java, Python, and Flutter. Exploring the world of AI/ML and Data Analytics to build innovative, real-world solutions.
+    </p>
+    <button class="resume">
+        Resume
+        <span class="download-icon">
+            <img src="{% static 'images/download.png' %}" alt="download">
+        </span>
+    </button>
+        <button class="resume">Contact me
+            <span class="download-icon">
+                <img src="{% static 'images/contact.png' %}" alt="call">
+            </span>
+        </button>
+        <button class="resume">Hire me
+            <span class="download-icon">
+                <img src="{% static 'images/hire.png' %}" alt="call">
+            </span>
+        </button>
+</div>
+
+    </div>
+    <div class="right">
+        <div class="border">
+            <div class="profile">
+                <img src="{% static '../static/images/vaibhav.jpg' %}" alt="profile">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="{% static 'images/vaibhav.jpg' %}" alt="About Vaibhav">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I'm Vaibhav Sutar, a passionate Computer Science undergraduate with a strong foundation in 
+                <strong>Java development</strong>, <strong>Python</strong>, and <strong>Flutter</strong>. 
+                I enjoy building real-world solutions and actively explore areas like <strong>AI/ML</strong> and <strong>Data Analytics</strong>.
+            </p>
+            <p>
+                I also have a solid command over <strong>Data Structures & Algorithms (DSA)</strong>, 
+                <strong>SQL databases</strong>, and key CS fundamentals like <strong>Operating Systems (OS)</strong>. 
+                These skills empower me to write efficient, scalable, and reliable code.
+            </p>
+            <button class="resume">
+                Download CV
+                <span class="download-icon">
+                    <img src="{% static 'images/download.png' %}" alt="download">
+                </span>
+            </button>
+            <a href="https://github.com/sutarvaibhav649" target = '_blank'>
+                <button class="resume">
+                Git-hub profile
+                <span class="download-icon">
+                    <img src="{% static 'images/github.png' %}" alt="git">
+                </span>
+            </button>
+            </a>
+            
+        </div>
+    </div>
+</section>
+<section class="skills" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">Java</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">C</div>
+        <div class="skill-item">C++</div>
+        <div class="skill-item">Dart</div>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Django</div>
+        <div class="skill-item">Flask</div>
+        <div class="skill-item">Flutter</div>
+        <div class="skill-item">SQL</div>
+        <div class="skill-item">PostgreSQL</div>
+        <div class="skill-item">Git & GitHub</div>
+        <div class="skill-item">VS Code</div>
+        <div class="skill-item">AI/ML</div>
+        <div class="skill-item">Pandas</div>
+        <div class="skill-item">NumPy</div>
+    </div>
+</section>
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Blog Website</h3>
+            <p>A full-stack blog app with user authentication, custom admin dashboard, and PostgreSQL database.</p>
+            <div class="tech-outer">
+                <p><strong>Tech:</strong>
+                    <div class="tech">
+                        <img src="{% static "images/django.png" %}" alt="dj">
+                        <img src="{% static "images/html.png" %}" alt="dj">
+                        <img src="{% static "images/css.png" %}" alt="dj">
+                        <img src="{% static "images/javascript.png" %}" alt="dj">
+                        <img src="{% static "images/postresql.png" %}" alt="dj">
+                    </div>
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/sutarvaibhav649/blog-website.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>LMS website</h3>
+            <p>A full-stack blog app with user authentication, custom admin dashboard, and PostgreSQL database.</p><br>
+            <div class="tech-outer">
+                <p><strong>Tech:</strong>
+                    <div class="tech">
+                        <img src="{% static "images/django.png" %}" alt="dj">
+                        <img src="{% static "images/html.png" %}" alt="dj">
+                        <img src="{% static "images/css.png" %}" alt="dj">
+                        <img src="{% static "images/javascript.png" %}" alt="dj">
+                        <img src="{% static "images/postresql.png" %}" alt="dj">
+                    </div>
+                </p>
+            </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/sutarvaibhav649/lms_project.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather app</h3>
+            <p>A Flutter weather app which will show the weather of selected city using API calls</p><br>
+            <div class="tech-outer">
+                <p><strong>Tech:</strong>
+                    <div class="tech">
+                        <img src="{% static "images/django.png" %}" alt="dj">
+                        <img src="{% static "images/html.png" %}" alt="dj">
+                        <img src="{% static "images/css.png" %}" alt="dj">
+                        <img src="{% static "images/javascript.png" %}" alt="dj">
+                    </div>
+                </p>
+            </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/sutarvaibhav649/flutter-weather_app.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="education" id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>B.Tech in Computer Science</h3>
+                <p><strong>Kolhapur Institute of Technology’s College of Engineering, Kolhapur</strong></p>
+                <p>📍 Kolhapur, Maharashtra | 📅 2022 – 2026</p>
+                <p>📊 CGPA: 8.24 (till 6th semester)</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>12th (HSC)</h3>
+                <p><strong>Anandsagar Public School, Tasgaon</strong></p>
+                <p>📍 Tasgaon, Maharashtra | 📅 2020 – 2022</p>
+                <p>📊 Score: 88%</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>10th (SSC)</h3>
+                <p><strong>Hanuman Vidyalaya, Agalgaon</strong></p>
+                <p>📍 Agalgaon, Maharashtra | 📅 2010 – 2020</p>
+                <p>📊 Score: 94.20%</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="contact" id="contact">
+ 
+    <h2>Contact Me</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <p class="success-message">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="post" class="contact-form">
+           {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="name">Email:</label>
+        <input type="text" name="email" id="email">
+        <label for="name">Message:</label>
+        <input type="text" name="message" id="message">
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+
+    <div class="left">
+        <ul>
+            <li>Name: Vaibhav Sutar</li>
+            <li><img src="{% static "images/contact.png" %}" alt="call">: 7499518568</li>
+            <li><img src="{% static "images/mail.png" %}" alt="mail">: sutar.vaibhav649@gmail.com</li>
+        </ul>
+    </div>
+    <div class="right">
+        <p>social links</p>
+        <a href="https://github.com/sutarvaibhav649"><img src="{% static "images/github.png" %}" alt="github"></a>
+        <a href="https://linkedin.com/in/vaibhavsutar649"><img src="{% static "images/linkedin.png" %}" alt="github"></a>
+    </div>
+
+</footer>
+
+<!-- Link to external JS file -->
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #16161a;
+    --text-color: #f8f8f2;
+    --primary-color: #ffd60a;
+    --link-color: #7fdbff;
+    --success-color: #2ec27e;
+    --error-color: #ff6b6b;
+    --section-bg: #21222c;
+    --nav-bg: #0f0f0f;
+    --border-color: #44475a;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: var(--nav-bg);
+    display: flex;
+    height: 90px;
+    box-shadow: 1px 2px 5px var(--border-color);
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 0 13px 0 13px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: var(--link-color);
+}
