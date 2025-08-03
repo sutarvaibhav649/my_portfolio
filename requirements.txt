@@ -1,10 +1,11 @@
 ﻿asgire
 Django
 python-decouple
-sqlparse==0.5.3
+sqlparse
 tzdata          # If deploying on Render/Heroku
 whitenoise            # For static file serving in production
 psycopg2             # If you're using PostgreSQL
 dj-database-url       # Helpful in deployment
 python-dotenv
+
 
